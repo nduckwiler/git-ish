@@ -3,6 +3,4 @@ SHOPPING LIST
 macaroni
 pepper
 flour
-eggs
 sugar
-chocolate chips
