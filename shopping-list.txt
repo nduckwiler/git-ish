@@ -5,3 +5,7 @@ cheese
 milk
 butter
 pepper
+flour
+eggs
+sugar
+chocolate chips
