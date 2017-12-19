@@ -1,6 +1,22 @@
 # practice
 Because practice makes perfect.
 
-# Header
-## Sub-header
-Who knows *where* this text will go.
+# Lessons
+## Undoing
+<details>
+  <summary>1. Make changes, commit, make more changes, amend previous commit without changing commit message</summary>
+  <br>
+  ```
+  git commit --amend --no-edit
+  ```
+</details>
+
+<details>
+  <summary>2. Make changes, commit, undo commit only, unstage files, undo changes in working directory (so that files look like previous commit</summary>
+  <br>
+  ```
+  git reset --soft HEAD^
+  git reset .
+  git checkout .
+  ```
+</details>
