@@ -32,3 +32,24 @@ Because practice makes perfect.
   git cat-file -p <checksum>   # To view contents of obj (even trees!)
   </pre>
 </details>
+
+<details>
+  <summary>
+  4. Print the object type of master.
+  * Pretty print the object.
+  * List the contents of the object (hint: use `ls-tree`).
+  * Use a different command to list the contents of that object (hint: you'll need to use the checksum of the tree from the previous command).
+  * Print the object type of that tree.
+  * Print the object type of one of the blobs in that tree.
+  * Pretty print the blob.
+  <br>
+  <pre> 
+  git cat-file -t master
+  git cat-file -p master
+  git ls-tree master
+  git cat-file -p <checksum of tree>
+  git cat-file -t <checksum of tree>
+  git cat-file -t <checksum of a blob>
+  git cat-file -p <checksum of a blob>
+  </pre>
+</details>
