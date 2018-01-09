@@ -33,18 +33,12 @@ This repository is a place to learn and practice git. Learn using the lessons in
 
 ## Git Object Model
 3. What Is A Repo? 
-   1. View the checksums of all git objects in repo (ignoring `info` and `pack` dirs)
-   1. View the contents of two objects: one blob and one tree
-   1. Show the trees and blobs in the current commit
-   1. View the contents of the tree object
+   1. View the directory containing all git objects in repo
 <details>
   <summary>Show answer</summary>
   <pre> 
-  i.   tree -I "info|pack" .git/objects
-  ii.  git cat-file -t <checksum>   # To determine type of obj
-       git cat-file -p <checksum>   # To view contents of obj
-  iii. git ls-tree master <or checksum>
-  iv.  git cat-file -p <checksum>   # To view contents of obj (even trees!)
+  i.   tree -I "info|pack" .git/objects  # OR
+       ls .git/objects
   </pre>
 </details>
 <br>
