@@ -78,8 +78,8 @@ This repository is a place to learn and practice git. Learn using the lessons in
   <summary>Show answer</summary>
   <pre> 
   # in root directory of repository
-  i.    tree -C .git/refs # or,
-        ls .git/refs
+
+  i.    tree -C .git/refs # OR ls .git/refs
 
   ii.   cat .git/refs/heads/master
 
