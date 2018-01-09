@@ -70,3 +70,36 @@ This repository is a place to learn and practice git. Learn using the lessons in
   </pre>
 </details>
 <br>
+
+5. Git Object Model: All Refs Lead to Commits 
+   1. View all references in your git repository 
+   1. `cat` the checksum (commit) to which master currently points to
+   1. `show` the commit message related to that checksum
+   1. Use `checkout` to create a new ref called `new-branch`
+   1. Print the checksum to which `new-branch` currently points to (should be the same as `master`)
+   1. Make a change, stage change, commit it
+   1. Print the checksum to which `new-branch` currently points to (should be different than `master`)
+   1. Delete that `new-branch` ref
+<details>
+  <summary>Show answer</summary>
+  <pre> 
+  # in root directory of repository
+  i.    tree -C .git/refs # or,
+        ls .git/refs
+
+  ii.   cat .git/refs/heads/master
+
+  iii.  git show &lt;checksum printed in previous step&gt;
+
+  iv.   git checkout -b new-branch
+
+  v.    cat .git/refs/heads/new-branch
+
+  vi.   # make your changes, stage, and commit however you like
+
+  vii.  cat .git/refs/head/new-branch
+
+  viii. git checkout master && git branch -d new-branch
+  </pre>
+</details>
+<br>
