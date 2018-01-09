@@ -49,7 +49,7 @@ This repository is a place to learn and practice git. Learn using the lessons in
 <br>
 
 ## Git Object Model
-3. What Is A Repo? 
+1. What Is A Repo? 
    1. View the directory containing all git objects in repo
 <details>
   <summary>Show answer</summary>
@@ -60,7 +60,7 @@ This repository is a place to learn and practice git. Learn using the lessons in
 </details>
 <br>
 
-4. Git Object Model: Investigate Master 
+2. Git Object Model: Investigate Master 
    1. `master` refers to a git object. Print the object type. Does it refer to a blob, tree, or commit?
    1. Pretty print a summary of the object.
    1. List the contents of the object (hint: use `ls-tree`).
@@ -82,7 +82,7 @@ This repository is a place to learn and practice git. Learn using the lessons in
 </details>
 <br>
 
-5. Git Object Model: All Refs Lead to Commits 
+3. Git Object Model: All Refs Lead to Commits 
    1. View all references in your git repository 
    1. `cat` the checksum (commit) to which master currently points to
    1. `show` the commit message related to that checksum
