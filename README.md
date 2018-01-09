@@ -44,17 +44,17 @@ This repository is a place to learn and practice git. Learn using the lessons in
 <br>
 
 4. Git Object Model: Investigate Master 
-   1. Print the object type of master.
-   1. Pretty print the object.
+   1. `master` refers to a git object. Print the object type. Does it refer to a blob, tree, or commit?
+   1. Pretty print a summary of the object.
    1. List the contents of the object (hint: use `ls-tree`).
-   1. Use a different command to list the contents of that object (hint: use the checksum of the tree from the previous command).
+   1. Use a different command to get the same output (hint: use the checksum of the tree from the previous command).
    1. Print the object type of that tree.
    1. Print the object type of one of the blobs in that tree.
    1. Pretty print the blob.
 <details>
   <summary>Show answer</summary>
   <pre> 
-  i.   git cat-file -t master
+  i.   git cat-file -t master (master is a reference to a commit)
   ii.  git cat-file -p master
   iii. git ls-tree master
   iv.  git cat-file -p &lt;checksum of tree&gt;
