@@ -23,12 +23,19 @@ This repository is a place to learn and practice git. Learn using the lessons in
 
 ## Undoing
 1. Changing History
-   1. Make changes, commit, make more changes
-   1. Amend previous commit without changing commit message
+   1. Make changes and commit
+   1. Change commit message
+   1. Make changes and commit
+   1. Make more changes
+   1. Add recent changes to latest commit without changing commit message
 <details>
   <summary>Show answer</summary>
-  <pre> 
-  git commit --amend --no-edit
+  <pre>
+  # make changes and commit
+  ii. git commit --amend
+  # make changes and commit
+  # make more changes
+  v.  git commit --amend --no-edit
   </pre>
 </details>
 <br>
