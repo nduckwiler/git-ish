@@ -1,5 +1,7 @@
-# practice
+# git-ish
 Because practice makes perfect.
+
+This repository is a place to learn and practice git. Learn using the lessons in this __README__. Practice using any other files in the repo.
 
 # Lessons
 ## Undoing
