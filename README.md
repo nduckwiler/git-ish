@@ -41,13 +41,16 @@ This repository is a place to learn and practice git. Learn using the lessons in
 <br>
 
 2. The Three Stages of Git
-   1. Make changes and commit
-   1. Undo commit only
-   1. Unstage files
-   1. Undo changes in working directory (so that files look like previous commit
+   1. Make changes, stage them, and commit
+   1. Undo commit only (HEAD should now reference previous commit)
+   1. Unstage current changes
+   1. Undo changes in working directory
+
+Use `git show` and `git status` to see the effect of each command
 <details>
   <summary>Show answer</summary>
   <pre> 
+  i.   # make changes, stage them, and commit
   ii.  git reset --soft HEAD^
   iii. git reset .
   iv.  git checkout .
