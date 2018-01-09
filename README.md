@@ -4,6 +4,23 @@ Because practice makes perfect.
 This repository is a place to learn and practice git. Learn using the lessons in this __README__. Practice using any other files in the repo.
 
 # Lessons
+## Exploring Your Repo
+1. Log
+   1. Log the last 5 commits on your branch
+   1. Log the last 10 commits on your branch, each with `oneline` of information
+   1. Log the last 10 commits on your branch, each with `oneline` of information, in `graph` format
+   1. Log the last 10 commits for `all` branches, each with `oneline` of information, in `graph` format (depending on your repo, the output here may be the same as the previous step)
+<details>
+  <summary>Show answer</summary>
+  <pre> 
+  i.  git log -5 
+  ii. git log --oneline -10
+  ii. git log --oneline --graph -10
+  ii. git log --oneline --graph --all -10
+  </pre>
+</details>
+<br>
+
 ## Undoing
 1. Changing History
    1. Make changes, commit, make more changes
