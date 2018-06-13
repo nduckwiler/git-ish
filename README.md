@@ -21,6 +21,22 @@ This repository is a place to learn and practice git. Learn using the lessons in
 </details>
 <br>
 
+2. Grep
+   1. Find all occurences of `"mac"` in the repo
+   1. Find all occurences of `"mac"` in the repo, ignoring case
+   1. Find all occurences of `"mac"` in `.txt` files, ignoring case
+   1. Find all occurences of `"mac"` in `.txt` files, ignoring case, with empty lines btwn matches from different files, headers, and line numbers
+<details>
+  <summary>Show answer</summary>
+  <pre> 
+  i.   git grep "mac"
+  ii.  git grep -i "mac"
+  iii. git grep -i "mac" -- "*.txt"
+  iv.  git grep --break --heading --line-number -i "mac" -- "*.txt"
+  </pre>
+</details>
+<br>
+
 ## Undoing
 1. Changing History
    1. Make changes and commit
